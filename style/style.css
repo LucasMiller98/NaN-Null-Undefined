@@ -2,3 +2,191 @@
 body {
     font-family: 'Pangolin', Arial, Helvetica, sans-serif;
 }
+::selection {
+    background: #223015;
+    color: #f1f1f1;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+    background-image: url('../img/Neocortex-1024x683.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 300px 0;
+    color: #c4c4c4;
+    text-shadow: 12px 8px 5px #474747;
+}
+main {
+    border: 2px dashed #606060;
+    padding: 10px 100px;
+    border-radius: 12px;
+    margin: 17px auto;
+    width: 710px;
+    line-height: 1.7em;
+    font-size: 1.2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.article-border-bottom {
+    border-bottom: 2px dashed #606060;
+    margin: 10px;
+}
+.article-border-top {
+    margin: 10px;
+    border-top: 2px dashed #606060;
+}
+main h3 {
+    margin: 12px 0;
+}
+main p {
+    margin-bottom: 10px;
+}
+img {
+    width: 550px;
+    border-radius: 2rem 1rem;
+    margin: 15px 0;
+    box-shadow: 12px 9px 5px #606060;
+}
+img:hover {
+    box-shadow: 10px 8px 5px #606060;
+}
+figcaption {
+    font-size: 1vw;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+figcaption:hover {
+    font-size: 1.1vw;
+}
+#aside-before-footer-createCommentary {
+    display: flex;
+    border: 2px dashed #606060;
+    margin: auto;
+    width: 790px;
+    padding: 90px 10px;
+    margin-top: 15px;
+    border-radius: 12%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#aside-before-footer-createCommentary h3 {
+    margin: 15px auto;
+    font-size: 1.3vw;
+}
+button {
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    padding: 12px;
+    border: 1px solid #606060;
+    background: 0;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: #606060;
+    outline: none;
+}
+button:hover {
+    background: #606060;
+    color: #f1f1f1;
+    animation-name: button-animation;
+    animation-delay: .2s;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes button-animation {
+    50% {
+        transform: translateY(-2px);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+}
+textarea {
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    resize: none;
+    padding: 25px ;
+    border-radius: 2rem 1rem;
+    outline: none;
+    color: #254625;
+    transition: animation 8s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: 1vw;
+}
+textarea:focus {
+    font-weight: 100;
+    color: #f1f1f1;
+    background: linear-gradient(#606060, #474747, #8b8b8b);
+    animation-name: textarea-animation;
+    animation-delay: .2s;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes textarea-animation {
+    50% {
+        transform: translateY(-2px);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+}
+input {
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    outline: none;
+    color: #254625;
+    padding: 10px;
+    border: 0;
+    background: 0;
+    border-bottom: 2px solid #254625;
+    transition: border-bottom 2s;
+}
+input:focus {
+    font-weight: 100;
+    padding: 12px;
+    color: #223015;
+    animation-name: animation-input;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes animation-input {
+    50% {
+        border-bottom: 2px solid #152c17;
+    }
+    70% {
+        border-bottom: 2px solid #0d270d;
+    }
+}
+footer div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer h3 {
+    margin-bottom: 10px;
+}
+footer p, h3, div {
+    margin-left: 32px;
+    padding: 0 15px;
+}
+.border-right {
+    border-right: 2px solid #f1f1f1;
+}
+footer a {
+    color: #f1f1f1;
+}
+footer {
+    font-size: 1.2vw;
+    padding: 170px 0;
+    margin-top: 17px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    background: linear-gradient(#606060, #474747, #8b8b8b);
+    color: #f1f1f1;
+    width: 100%;
+}
